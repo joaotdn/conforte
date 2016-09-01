@@ -42,7 +42,13 @@
     "email": "foundation@zurb.com"
   },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "gulp-if": "^2.0.1",
+    "gulp-spritesmith": "0.0.2"
+  }
 }

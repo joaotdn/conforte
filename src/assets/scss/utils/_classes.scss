@@ -1,0 +1,119 @@
+// Displays
+.d-block {
+  display: block;
+}
+
+.d-table {
+  display: table;
+}
+
+.d-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.d-iblock {
+  display: inline-block;
+}
+
+//Margins
+.no-margin {
+  margin: 0;
+}
+
+.divider {
+  @extend .small-12;
+  @extend .float-left;
+
+  &.bottom-20 {
+    margin-bottom: 20px;
+  }
+
+  &.bottom-30 {
+    margin-bottom: 30px;
+  }
+
+  &.bottom-40 {
+    margin-bottom: 40px;
+  }
+}
+
+//Positions
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+
+//Cores
+.gradient {
+  @extend %transition;
+  
+  background: -webkit-linear-gradient(90deg, #3175ac 14%, #569dd6 77%, #3b7eb4 100%);
+  background: -moz-linear-gradient(90deg, #3175ac 14%, #569dd6 77%, #3b7eb4 100%);
+  background: -o-linear-gradient(90deg, #3175ac 14%, #569dd6 77%, #3b7eb4 100%);
+  background: -ms-linear-gradient(90deg, #3175ac 14%, #569dd6 77%, #3b7eb4 100%);
+  background: linear-gradient(0deg, #3175ac 14%, #569dd6 77%, #3b7eb4 100%);
+
+  &:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+//Buttons
+.btn-glass {
+  @include button(false, transparent, $primary-color, $primary-color);
+  border: 3px solid $primary-color;
+  font-size: rem-calc(24);
+
+  &:hover {
+    color: $white;
+  }
+
+  &.radius {
+    border-width: 1px;
+    @extend .font-light;
+    border-radius: 6px;
+    padding: rem-calc(10 30);
+
+    &:hover {
+      background-color: #545353;
+      border-color: #545353;
+    }
+  }
+}
+
+//Forms
+.field-group {
+  h3 {
+    font-size: rem-calc(24);
+    color: #545353;
+  }
+  p {
+    margin-bottom: rem-calc(10);
+    input {
+      @extend .small-12;
+      @extend .no-margin;
+      height: rem-calc(45);
+      font-size: rem-calc(20);
+      &.local {
+        width: rem-calc(238);
+        margin-bottom: rem-calc(10);
+      }
+    }
+  }
+}
+
+// Utils
+.full-height {
+  @extend %full-height;
+}

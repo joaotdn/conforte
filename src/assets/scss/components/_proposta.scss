@@ -1,0 +1,23 @@
+#proposta {
+
+}
+
+#form-proposta {
+  padding: rem-calc(60 0);
+  background: rgba(255,255,255,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 43%, rgba(231,231,231,1) 84%, rgba(230,230,230,1) 87%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(43%, rgba(246,246,246,1)), color-stop(84%, rgba(231,231,231,1)), color-stop(87%, rgba(230,230,230,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 43%, rgba(231,231,231,1) 84%, rgba(230,230,230,1) 87%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 43%, rgba(231,231,231,1) 84%, rgba(230,230,230,1) 87%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 43%, rgba(231,231,231,1) 84%, rgba(230,230,230,1) 87%);
+  background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 43%, rgba(231,231,231,1) 84%, rgba(230,230,230,1) 87%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=1 );
+
+  h4 {
+    color: #888484;
+  }
+}
+
+.computer {
+  height: rem-calc(420);
+}

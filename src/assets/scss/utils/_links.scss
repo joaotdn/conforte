@@ -1,0 +1,38 @@
+.less-opacity {
+  @extend %transition;
+  &:hover {
+    opacity: .8;
+  }
+}
+
+a {
+  @extend %transition;
+}
+
+.accordion {
+  li {
+    @extend .divider;
+    @extend .bottom-30;
+    &.is-active {
+      a {
+        @extend .font-bold;
+      }
+      .sprite-seta {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+    }
+  }
+  a,p {
+    font-size: rem-calc(18);
+  }
+  a {
+    margin-bottom:rem-calc(30);
+  }
+  p {
+    @extend .no-margin;
+  }
+}

@@ -1,0 +1,9 @@
+#construtoras {
+  height: rem-calc(600);
+  background: -webkit-linear-gradient(90deg, #d0f2ff 0%, #ffffff 100%);
+  background: -moz-linear-gradient(90deg, #d0f2ff 0%, #ffffff 100%);
+  background: -o-linear-gradient(90deg, #d0f2ff 0%, #ffffff 100%);
+  background: -ms-linear-gradient(90deg, #d0f2ff 0%, #ffffff 100%);
+  background: linear-gradient(0deg, #d0f2ff 0%, #ffffff 100%);
+  border-bottom: 20px solid $primary-color;
+}

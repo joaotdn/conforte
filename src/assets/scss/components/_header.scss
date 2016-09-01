@@ -1,0 +1,61 @@
+#header {
+  .button {
+    padding: rem-calc(5 30);
+    font-size: rem-calc(20);
+    border-radius: 5px;
+    text-shadow: 0px 2px 2px #555;
+  }
+}
+
+#main-menu {
+  margin-right: rem-calc(20);
+  border-radius: 6px;
+  background: -webkit-linear-gradient(90deg, #2d3132 0%, #1e1f23 100%);
+  background: -moz-linear-gradient(90deg, #2d3132 0%, #1e1f23 100%);
+  background: -o-linear-gradient(90deg, #2d3132 0%, #1e1f23 100%);
+  background: -ms-linear-gradient(90deg, #2d3132 0%, #1e1f23 100%);
+  background: linear-gradient(0deg, #2d3132 0%, #1e1f23 100%);
+
+  li {
+    &:first-child {
+      a {
+        padding-left: 20px;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+      }
+    }
+
+    &:last-child {
+      a {
+        padding-right: 20px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+      }
+    }
+    
+    &.active {
+      a {
+        background-color: $primary-color;
+      }
+    }
+  }
+
+  a {
+    @extend .d-block;
+
+    height: rem-calc(52.22);
+    font-size: rem-calc(20);
+    line-height: rem-calc(52.22);
+    padding: rem-calc(0 10);
+    color: #fff;
+    
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
+
+.home-button {
+  line-height: rem-calc(50);
+  margin: rem-calc(14 20 0 0);
+}

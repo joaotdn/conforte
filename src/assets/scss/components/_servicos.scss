@@ -1,0 +1,11 @@
+#servicos {
+  padding: rem-calc(60 0);
+  -webkit-box-shadow: inset 0px 4px 15px 7px rgba(48, 48, 48, 0.37);
+  -moz-box-shadow:    inset 0px 4px 15px 7px rgba(48, 48, 48, 0.37);
+  box-shadow:         inset 0px 4px 15px 7px rgba(48, 48, 48, 0.37);
+
+  p {
+    font-size: rem-calc(24);
+    line-height: 1.4;
+  }
+}

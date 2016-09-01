@@ -49,7 +49,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #2199e8,
+  primary: #3b7eb4,
   secondary: #777,
   success: #3adb76,
   warning: #ffae00,
@@ -70,7 +70,7 @@ $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
 $global-text-direction: ltr;
-$global-flexbox: false;
+$global-flexbox: true;
 $print-transparent-backgrounds: true;
 
 @include add-foundation-colors;
@@ -193,15 +193,15 @@ $input-error-font-weight: $global-weight-bold;
 // 7. Accordion
 // ------------
 
-$accordion-background: $white;
-$accordion-plusminus: true;
-$accordion-item-color: foreground($accordion-background, $primary-color);
-$accordion-item-background-hover: $light-gray;
-$accordion-item-padding: 1.25rem 1rem;
-$accordion-content-background: $white;
-$accordion-content-border: 1px solid $light-gray;
-$accordion-content-color: foreground($accordion-background, $primary-color);
-$accordion-content-padding: 1rem;
+$accordion-background: transparent;
+$accordion-plusminus: false;
+$accordion-item-color: #4a4848;;
+$accordion-item-background-hover: transparent;
+$accordion-item-padding: 0;
+$accordion-content-background: transparent;
+$accordion-content-border: none;
+$accordion-content-color: #4a4848;;
+$accordion-content-padding: 0;
 
 // 8. Accordion Menu
 // -----------------

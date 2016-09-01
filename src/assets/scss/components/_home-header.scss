@@ -1,0 +1,28 @@
+#home-header {
+  @extend %transition;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: rem-calc(30 0);
+  
+  &.active {
+    background-color: #545353;
+  }
+}
+
+#chat-btn {
+  position: absolute;
+  bottom: rem-calc(20);
+  right: rem-calc(20);
+  z-index: 991;
+
+  &:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
