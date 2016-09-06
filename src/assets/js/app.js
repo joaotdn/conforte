@@ -17,8 +17,23 @@ var buttonNextSection = function(element, target) {
     });
 };
 
+var scrollMenu = function (element) {
+    $('a',element).on('click', function (e) {
+        e.preventDefault();
+        var tgt = $(this).attr('href');
+        $('html,body').animate({
+            scrollTop: $(tgt).position().top - 114 + 'px'
+        }, 500);
+    });
+};
+
 (function($) {
     menuActiveScroll('#home-header');
     buttonNextSection('.tg-testimonials','#testimonials');
+    scrollMenu('#main-menu:not(.page-menu)');
+
+    $('#chat-btn').on('click',function (e) {
+        e.preventDefault();
+    });
 })(jQuery);
 

@@ -16,6 +16,18 @@
   display: inline-block;
 }
 
+//Text
+.text-up {
+  text-transform: uppercase;
+}
+
+figcaption {
+  h4 {
+    font-size: rem-calc(18);
+    line-height: 1.2;
+  }
+}
+
 //Margins
 .no-margin {
   margin: 0;
@@ -110,6 +122,18 @@
         margin-bottom: rem-calc(10);
       }
     }
+  }
+}
+
+//Foundation expansions
+*[data-dropdown] {
+  background-color: $primary-color;
+  border-radius: 8px;
+
+  p {
+    font-size:rem-calc(18);
+    color: $white;
+    line-height: 1.2;
   }
 }
 

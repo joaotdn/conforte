@@ -1,4 +1,4 @@
-#home-header {
+#home-header,#page-header {
   @extend %transition;
   
   position: fixed;
@@ -13,16 +13,8 @@
 }
 
 #chat-btn {
-  position: absolute;
-  bottom: rem-calc(20);
+  position:fixed;
+  bottom: rem-calc(100);
   right: rem-calc(20);
   z-index: 991;
-
-  &:hover {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
-  }
 }

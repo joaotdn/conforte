@@ -1,0 +1,24 @@
+#page-content {
+  padding-top: rem-calc(164);
+}
+
+.servico {
+  padding-left: rem-calc(80);
+  @extend .rel;
+  margin-bottom: rem-calc(50);
+
+  figure {
+    @extend .abs;
+    top: 0;
+    left: 0;
+  }
+}
+
+*[data-page="servicos"] {
+  h4 {
+    color: #545353;
+  }
+  p {
+    font-size: rem-calc(24);
+  }
+}

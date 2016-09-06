@@ -23,7 +23,7 @@
 @include foundation-menu;
 @include foundation-menu-icon;
 //@include foundation-drilldown-menu;
-//@include foundation-dropdown;
+@include foundation-dropdown;
 //@include foundation-dropdown-menu;
 //@include foundation-flex-video;
 //@include foundation-label;
@@ -70,3 +70,6 @@
 @import "components/servicos";
 @import "components/proposta";
 @import "components/footer";
+
+//Pages
+@import "pages/servicos";
