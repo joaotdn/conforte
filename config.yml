@@ -31,6 +31,9 @@ PATHS:
     # Libraries requried by Foundation
     - "bower_components/jquery/dist/jquery.js"
     - "bower_components/what-input/what-input.js"
+    - "bower_components/jquery-mask-plugin/dist/jquery.mask.js"
+    # "bower_components/jpreloader/js/jpreloader.js"
+    - "bower_components/QueryLoader2/queryloader2.min.js"
     - "bower_components/jquery-cycle2/build/jquery.cycle2.js"
     - "bower_components/parallax.js/parallax.js"
     # Core Foundation files

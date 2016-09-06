@@ -45,7 +45,7 @@
     @extend .small-12;
     height: 100%;
     background-color: rgba(#000, .6);
-    z-index: 0;
+    z-index: 1;
   }
 }
 
@@ -64,5 +64,28 @@
 
   a {
     @extend .less-opacity;
+  }
+}
+
+.player-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  @extend .small-12;
+  @extend %full-height;
+  z-index: 0;
+
+  video {
+    min-width: 100%;
+    min-height: 100%;
+
+    width: auto;
+    height: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
 }

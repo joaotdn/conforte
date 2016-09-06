@@ -1,10 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<section id="contato" class="small-12 float-left" data-magellan-target="contato">
+    <div class="row">
+        <div class="small-12 columns">
+            <header class="divider bottom-30 text-center">
+                <h1 class="primary-color font-bold">Contato</h1>
+            </header>
+
+            <form id="form-contato">
+                <div class="small-12 medium-5 float-left field-group">
+                    <p>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome"  id="nome" title="Seu nome" required>
+                    </p>
+
+                    <p>
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone" title="Seu telefone" class="tele" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="email" title="Seu email" required>
+                    </p>
+                </div>
+
+                <div class="small-12 medium-5 float-right field-group">
+                    <p>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" cols="30" rows="7" id="mensagem" required></textarea>
+                    </p>
+                </div>
+
+                <p class="text-right small-12 float-left">
+                    <button type="submit" class="btn-glass radius no-margin">Enviar</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</section>

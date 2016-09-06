@@ -32,12 +32,6 @@
         border-bottom-right-radius: 6px;
       }
     }
-    
-    &.active {
-      a {
-        background-color: $primary-color;
-      }
-    }
   }
 
   a {
@@ -49,7 +43,7 @@
     padding: rem-calc(0 10);
     color: #fff;
     
-    &:hover {
+    &:hover, &.active {
       background-color: $primary-color;
     }
   }

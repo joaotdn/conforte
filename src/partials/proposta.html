@@ -1,6 +1,6 @@
 
-<sections id="proposta" class="small-12 float-left">
-    <form novalidate="novalidate" id="form-proposta" class="small-12 float-left">
+<sections id="proposta" class="small-12 float-left" data-magellan-target="proposta">
+    <form id="form-proposta" class="small-12 float-left">
         <div class="row align-middle full-height">
             <div class="columns medium-text-left">
                 <header class="divider bottom-20 text-center">
@@ -15,19 +15,19 @@
                     <h3 class="font-bold divider bottom-20">Dados do solicitante</h3>
 
                     <p>
-                        <input type="text" placeholder="nome">
+                        <input type="text" name="nome"  placeholder="nome" title="Seu nome" required>
                     </p>
 
                     <p>
-                        <input type="text" placeholder="email">
+                        <input type="text" name="email" placeholder="email" title="Seu email" required>
                     </p>
 
                     <p>
-                        <input type="text" placeholder="telefone">
+                        <input type="tel" name="tel1" placeholder="telefone" title="Seu telefone" class="tele" required>
                     </p>
 
                     <p>
-                        <input type="text" placeholder="telefone 2">
+                        <input type="tel" name="tel2" placeholder="telefone 2" title="" class="tele">
                     </p>
                 </div>
 
@@ -35,28 +35,28 @@
                     <h3 class="font-bold divider bottom-20">Dados do condomínio</h3>
 
                     <p>
-                        <input type="text" placeholder="nome do condomínio">
+                        <input type="text" name="cnome" title="Nome do condomínio" placeholder="nome do condomínio" required>
                     </p>
 
                     <p>
-                        <input type="text" placeholder="tipo do condomínio (vertical, horizontal)">
+                        <input type="text" name="ctipo" title="Tipo do condomínio (vertical, horizontal)" placeholder="tipo do condomínio (vertical, horizontal)" required>
                     </p>
 
                     <p>
-                        <input type="text" placeholder="quantidade de unidades">
+                        <input type="number" name="cunids" title="Quantidade de unidades" placeholder="quantidade de unidades" required>
                     </p>
 
                     <p>
-                        <input type="text" placeholder="endereço">
+                        <input type="text" name="clocal" title="Endereço do condomínio" placeholder="endereço" required>
                     </p>
 
                     <p>
-                        <input type="text" placeholder="cidade" class="local float-left">
-                        <input type="text" placeholder="estado" class="local float-right">
+                        <input type="text" name="ccidade" title="Cidade" placeholder="cidade" class="local float-left" required>
+                        <input type="text" name="cuf" title="Estado" placeholder="estado" class="local float-right" required>
                     </p>
 
                     <p>
-                        <input type="text" placeholder="nº de apartamentos">
+                        <input type="number" name="capts" title="Número de apartamentos" placeholder="nº de apartamentos" required>
                     </p>
 
                     <button type="submit" class="btn-glass radius no-margin">

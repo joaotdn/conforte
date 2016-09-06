@@ -1,0 +1,11 @@
+#contato {
+  padding: rem-calc(60 0);
+
+  label, input, textarea {
+    font-size: rem-calc(18);
+  }
+
+  label {
+    color: #888484;
+  }
+}
