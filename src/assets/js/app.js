@@ -1,8 +1,21 @@
 $(document).foundation();
 
-var menuActiveScroll = function(element) {
+var menuActiveScroll = function(element, sections) {
+
     $(window).on('scroll', function(e) {
         var posY = e.currentTarget.scrollY;
+
+        if(typeof sections !== 'undefined') {
+
+            for(var i = 0; i < sections.length; i++) {
+                if($(sections[i]).position().top == $(this).scrollTop())
+                    console.log(sections[i]);
+            }
+
+        } else {
+            return false;
+        }
+
         if(posY >= 100)
             $(element).addClass('active');
         else
@@ -43,7 +56,8 @@ var scrollMenu = function (element) {
         fadeOutTime: 1000
     });
 
-    menuActiveScroll('#home-header');
+    var homeSections = ['#testimonials','#construtoras','#servicos','#proposta','#contato'];
+    menuActiveScroll('#home-header',homeSections);
 
     buttonNextSection('.tg-testimonials','#testimonials');
     buttonNextSection('.go-construtoras','#construtoras');
@@ -109,6 +123,37 @@ var scrollMenu = function (element) {
             }
         });
     });
+
+    //Chat
+    $('#chat-req').on('submit',function (e) {
+        e.preventDefault();
+        var text = $('input',this).eq(0).val();
+        $('textarea','#send-anwser').val(text);
+        $('#chat-container').foundation('open');
+    });
+
+    $('#send-anwser').on('submit',function (e) {
+        e.preventDefault();
+        var _data = $(this).serialize();
+
+        $.ajax({
+            url: 'chat.php',
+            data: {
+                formData: _data
+            },
+            success: function (data) {
+                if(data == "true") {
+                    alert('Mensagem enviada com sucesso! Aguarde nossa resposta.');
+                    location.reload();
+                } else {
+                    alert('Ocurreu algum erro no envio. Verifique se os dados estão todos preenchidos e tente novamente.');
+                }
+            }
+        });
+
+    });
+
+
 })(jQuery);
 
 

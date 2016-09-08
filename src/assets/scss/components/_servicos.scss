@@ -13,3 +13,43 @@
 .servico {
   min-height: rem-calc(250);
 }
+
+#list-servicos {
+  figure {
+    @extend .rel;
+  }
+  hr {
+    opacity: .5;
+  }
+  h5 {
+    color: #545353;
+    margin-top: rem-calc(10);
+  }
+  .sprite {
+    @extend %transition;
+  }
+  .row {
+    height: rem-calc(180);
+    cursor: pointer;
+    opacity: .7;
+    @extend %transition;
+
+    &:hover {
+      opacity: 1;
+      .sprite {
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .dropdown-pane {
+    width: 100%;
+    p {
+      font-size: rem-calc(16);
+    }
+  }
+}

@@ -1,5 +1,6 @@
 #contato {
   padding: rem-calc(60 0);
+  padding-bottom: 0;
 
   label, input, textarea {
     font-size: rem-calc(18);
@@ -7,5 +8,19 @@
 
   label {
     color: #888484;
+  }
+}
+
+#map {
+  iframe {
+    width: 100%;
+  }
+}
+
+.address {
+  p {
+    color: $white;
+    @extend .font-light;
+    margin-bottom: rem-calc(5);
   }
 }
