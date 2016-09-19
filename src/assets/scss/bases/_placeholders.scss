@@ -9,3 +9,35 @@
 %full-height {
   height: 100%;
 }
+
+.gray {
+  color: #666;
+}
+
+.text-divider {
+  @extend .rel;
+  padding-bottom: rem-calc(50);
+  margin-bottom: rem-calc(50);
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: 1px solid #eaeaea;
+    width: 30%;
+    left: 35%;
+    bottom: 0;
+  }
+}
+
+.txt-block {
+  p {
+    margin: 0;
+  }
+  &:not(.first)
+  {
+    padding-top: rem-calc(40);
+    margin-top: rem-calc(40);
+    border-top: 1px solid #eaeaea;
+  }
+}

@@ -1,9 +1,10 @@
 #testimonials {
   height: rem-calc(500);
-  background-image: url("../img/media/bg_depo.jpg");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
+  //background-image: url("../img/media/bg_depo.jpg");
+  //background-repeat: no-repeat;
+  //background-position: center bottom;
+  //background-size: 100%;
+  //background-attachment: fixed;
   position: relative;
 
   .row {
@@ -64,5 +65,24 @@
 
   &.prev {
     left: -25px;
+  }
+}
+
+@include breakpoint(medium down) {
+  #list-testimonials {
+    p {
+      font-size: rem-calc(16);
+    }
+  }
+  .nav-ttm {
+    top: 90%;
+
+    &.next {
+      right: 0;
+    }
+
+    &.prev {
+      left: 0;
+    }
   }
 }

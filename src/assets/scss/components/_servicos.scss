@@ -1,4 +1,4 @@
-#servicos {
+#servicos, #sobre {
   padding: rem-calc(60 0);
   -webkit-box-shadow: inset 0px 4px 15px 7px rgba(48, 48, 48, 0.37);
   -moz-box-shadow:    inset 0px 4px 15px 7px rgba(48, 48, 48, 0.37);
@@ -17,6 +17,17 @@
 #list-servicos {
   figure {
     @extend .rel;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 50%;
+      height: 2px;
+      background-color: #eaeaea;
+      position: absolute;
+      bottom: 0;
+      left: 25%;
+      z-index: 99;
+    }
   }
   hr {
     opacity: .5;
@@ -33,6 +44,7 @@
     cursor: pointer;
     opacity: .7;
     @extend %transition;
+    @extend .rel;
 
     &:hover {
       opacity: 1;
@@ -48,6 +60,14 @@
 
   .dropdown-pane {
     width: 100%;
+    p {
+      font-size: rem-calc(16);
+    }
+  }
+}
+
+@include breakpoint(medium down) {
+  #servicos, #sobre {
     p {
       font-size: rem-calc(16);
     }

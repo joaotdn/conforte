@@ -89,3 +89,13 @@
     transform: translate(-50%,-50%);
   }
 }
+
+@include breakpoint(medium down) {
+  #top-video {
+    article {
+      h1 {
+        font-size: rem-calc(18);
+      }
+    }
+  }
+}

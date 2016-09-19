@@ -59,8 +59,8 @@ var scrollMenu = function (element) {
     var homeSections = ['#testimonials','#construtoras','#servicos','#proposta','#contato'];
     menuActiveScroll('#home-header',homeSections);
 
-    buttonNextSection('.tg-testimonials','#testimonials');
-    buttonNextSection('.go-construtoras','#construtoras');
+    buttonNextSection('.tg-testimonials','#sobre');
+    buttonNextSection('.go-sobre','#sobre');
 
     scrollMenu('#main-menu:not(.page-menu)');
 
@@ -84,7 +84,7 @@ var scrollMenu = function (element) {
         }
     });
 
-    $('#form-proposta').on('submit', function (e) {
+    $(document).on('submit', '#form-proposta', function (e) {
         e.preventDefault();
         var _data = $(this).serialize();
 
@@ -104,7 +104,7 @@ var scrollMenu = function (element) {
         });
     });
 
-    $('#form-contato').on('submit', function (e) {
+    $(document).on('submit', '#form-contato', function (e) {
         e.preventDefault();
         var _data = $(this).serialize();
 
@@ -151,6 +151,15 @@ var scrollMenu = function (element) {
             }
         });
 
+    });
+
+    //menu mobile
+    $('.sand').click(function (e) {
+        e.preventDefault();
+    });
+
+    $('.toggle-mo-menu').on('click',function (e) {
+        $('#offcanvas').toggleClass('active');
     });
 
 

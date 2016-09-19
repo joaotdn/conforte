@@ -137,7 +137,26 @@ figcaption {
   }
 }
 
+.form-error.is-visible {
+  @extend .small-12;
+  @extend .float-left;
+  display: inline-block;
+  padding: rem-calc(10 0);
+}
+
 // Utils
 .full-height {
   @extend %full-height;
+}
+
+@include breakpoint(medium down) {
+  .field-group {
+    p {
+      input {
+        &.local {
+          width: 100% !important;
+        }
+      }
+    }
+  }
 }
